@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" fill="none">
+    <defs>
+        <radialGradient id="glow" cx="24%" cy="50%" r="55%">
+            <stop offset="0%" stop-color="#10B981" stop-opacity="0.16"/>
+            <stop offset="100%" stop-color="#101012" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+            <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#27272A" stroke-width="1" stroke-opacity="0.45"/>
+        </pattern>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1280" height="640" fill="#101012"/>
+    <rect width="1280" height="640" fill="url(#grid)"/>
+    <rect width="1280" height="640" fill="url(#glow)"/>
+
+    <!-- Subtle background telemetry trace -->
+    <path d="M0 490 L210 490 L275 455 L340 475 L430 410 L515 445 L610 385 L710 420 L820 355 L920 390 L1040 340 L1145 360 L1280 315"
+          stroke="#10B981" stroke-opacity="0.14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Official Splitline icon mark -->
+    <g transform="translate(120, 210)">
+        <rect width="180" height="180" rx="38" fill="#18181B" stroke="#27272A" stroke-width="3"/>
+        <g transform="scale(2.8125)">
+            <path d="M12 41L23 41L29 22L36 44L42 29L52 29" stroke="#10B981" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="52" cy="29" r="3.5" fill="#F4F4F5"/>
+        </g>
+    </g>
+
+    <!-- Wordmark and tagline -->
+    <text x="348" y="294" fill="#F4F4F5" font-family="DejaVu Sans, Inter, sans-serif" font-size="88" font-weight="700" letter-spacing="-2">Splitline</text>
+    <text x="352" y="352" fill="#A1A1AA" font-family="DejaVu Sans, Inter, sans-serif" font-size="28" font-weight="400">Open-source PHP endurance telemetry &amp; self-hosted analytics</text>
+
+    <!-- Package pills -->
+    <g transform="translate(352, 392)" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="500">
+        <rect x="0" y="0" width="166" height="38" rx="19" fill="#18181B" stroke="#10B981" stroke-opacity="0.45" stroke-width="1.5"/>
+        <text x="83" y="24" text-anchor="middle" fill="#10B981">splitline/core</text>
+
+        <rect x="180" y="0" width="194" height="38" rx="19" fill="#18181B" stroke="#27272A" stroke-width="1.5"/>
+        <text x="277" y="24" text-anchor="middle" fill="#E4E4E7">splitline/parsers</text>
+
+        <rect x="388" y="0" width="194" height="38" rx="19" fill="#18181B" stroke="#27272A" stroke-width="1.5"/>
+        <text x="485" y="24" text-anchor="middle" fill="#E4E4E7">splitline/weather</text>
+
+        <rect x="596" y="0" width="194" height="38" rx="19" fill="#18181B" stroke="#27272A" stroke-width="1.5"/>
+        <text x="693" y="24" text-anchor="middle" fill="#E4E4E7">splitline/laravel</text>
+    </g>
+
+    <!-- Footer accent -->
+    <text x="120" y="568" fill="#71717A" font-family="DejaVu Sans Mono, monospace" font-size="20">github.com/splitline-php</text>
+    <text x="1160" y="568" text-anchor="end" fill="#71717A" font-family="DejaVu Sans Mono, monospace" font-size="20">PHP 8.5 · MIT</text>
+</svg>
